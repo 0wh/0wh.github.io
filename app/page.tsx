@@ -1,15 +1,26 @@
+"use client";
 import Image from "next/image";
+import Panel from "./Panel";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm xl:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 py-4 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit xl:static xl:w-auto xl:rounded-xl xl:border xl:bg-gray-200 xl:px-24 xl:dark:bg-zinc-800/30 font-semibold text-2xl font-serif">
-          Hey, I'm Mike Hyatt.
+    <main className="flex min-h-screen flex-col items-center p-32">
+      <div className="z-10 max-w-5xl w-full mb-4 md:flex">
+        <p className="static left-0 top-0 border-b border-gray-300 from-zinc-200 py-4 dark:border-neutral-800 dark:from-inherit rounded-xl border bg-gray-200 px-24 dark:bg-zinc-800/30 font-semibold text-2xl font-serif">
+          Hey, I'm <span className="font-sans">Mike Hyatt</span>.
         </p>
       </div>
-
-      <div className="grid text-left md:grid-cols-2 w-full max-w-2xl xl:max-w-5xl xl:grid-cols-4">
+      <div className="mb-4 max-w-5xl w-full">
+        <div className="mx-4 rounded-lg border border-transparent my-4 px-5 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30">
+          <Panel />
+        </div>
+      </div>
+      <div className="z-10 max-w-5xl w-full mb-4 md:flex">
+        <p className="static left-0 top-0 border-b border-gray-300 from-zinc-200 py-4 dark:border-neutral-800 dark:from-inherit rounded-xl border bg-gray-200 px-24 dark:bg-zinc-800/30 font-semibold text-2xl font-serif">
+          Projects
+        </p>
+      </div>
+      <div className="grid w-full text-left md:grid-cols-2 lg:grid-cols-3 xl:max-w-5xl xl:grid-cols-4">
         <a
           href=""
           className="group rounded-lg border border-transparent mx-4 my-4 px-5 py-4 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30"
