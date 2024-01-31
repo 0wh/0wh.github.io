@@ -141,7 +141,7 @@ const MsgBox = ({ message }) => {
     <div
       className={`w-full mb-3 flex flex-col justify-start items-start px-2.5 py-[7px] max-h-24 overflow-auto rounded-md ${
         message.role === "user"
-          ? " bg-sky-400 dark:bg-sky-900 opacity-90"
+          ? "bg-sky-400 dark:bg-sky-900 opacity-90"
           : "bg-gray-300 dark:bg-gray-700 opacity-95"
       }`}
     >
@@ -158,16 +158,16 @@ const FullView = ({ messages }) => {
   return (
     <div
       id="chatBox"
-      className="flex flex-col w-full items-center justify-end sm:justify-start h-[440px] overflow-auto rounded-md"
+      className="flex flex-col w-full items-center h-[440px] overflow-auto rounded-md"
     >
       {messages.map((message, index) => (
         <div
           key={index}
           className={`w-full mb-3 flex flex-col justify-start items-start px-2.5 py-[7px] rounded-md ${
             message.role === "user"
-              ? " bg-sky-400 dark:bg-sky-900 opacity-90"
+              ? "bg-sky-400 dark:bg-sky-900 opacity-90"
               : "bg-gray-300 dark:bg-gray-700 opacity-95"
-          }`}
+          } ${index === 0 && "mt-auto sm:mt-0"}`}
         >
           {message.content}
         </div>
