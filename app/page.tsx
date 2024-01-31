@@ -4,26 +4,25 @@ import Panel from "./Panel";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-32">
-      <div className="z-10 max-w-5xl w-full mb-4 md:flex">
-        <p className="static left-0 top-0 border-b border-gray-300 from-zinc-200 py-4 dark:border-neutral-800 dark:from-inherit rounded-xl border bg-gray-200 px-24 dark:bg-zinc-800/30 font-semibold text-2xl font-serif">
-          Hey, I'm <span className="font-sans">Mike Hyatt</span>.
+    <main className="flex min-h-screen flex-col items-center pt-5 sm:p-5 sm:pt-16 lg:p-32">
+      <div className="mb-4 max-w-[600px] lg:max-w-[900px] xl:max-w-[1200px] w-full">
+        <p className="mx-4 text-start font-semibold font-sans">
+          Hey, I'm <span className="font-serif text-2xl">Mike Hyatt</span>.
+          Please chat with my assistant.
         </p>
-      </div>
-      <div className="mb-4 max-w-5xl w-full">
-        <div className="mx-4 rounded-lg border border-transparent my-4 px-5 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30">
+        <div className="sm:mx-4 sm:rounded-lg border border-transparent my-4 px-5 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30">
           <Panel />
         </div>
       </div>
-      <div className="z-10 max-w-5xl w-full mb-4 md:flex">
-        <p className="static left-0 top-0 border-b border-gray-300 from-zinc-200 py-4 dark:border-neutral-800 dark:from-inherit rounded-xl border bg-gray-200 px-24 dark:bg-zinc-800/30 font-semibold text-2xl font-serif">
+      <div className="z-10 w-full">
+        <p className="text-center font-semibold text-2xl font-serif">
           Projects
         </p>
       </div>
-      <div className="grid w-full text-left md:grid-cols-2 lg:grid-cols-3 xl:max-w-5xl xl:grid-cols-4">
+      <div className="grid text-left grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <a
           href=""
-          className="group rounded-lg border border-transparent mx-4 my-4 px-5 py-4 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent max-w-[268px] mx-4 my-4 px-5 py-4 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -41,13 +40,13 @@ export default function Home() {
             priority
           />
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+            An all-encompassing chatbot hosted on AWS.
           </p>
         </a>
 
         <a
           href=""
-          className="group rounded-lg border border-transparent mx-4 my-4 px-5 py-4 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent max-w-[268px] mx-4 my-4 px-5 py-4 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -56,7 +55,7 @@ export default function Home() {
           >
             Doorman{" "}
           </h2>
-          <div className="flex w-[150px] h-[150px] justify-center items-center">
+          <div className="mb-2 flex w-[150px] h-[150px] justify-center items-center">
             <Image
               className="mb-2 rounded transition-transform group-hover:translate-x-1 motion-reduce:transform-none"
               src="/doorman.png"
@@ -67,13 +66,13 @@ export default function Home() {
             />
           </div>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+            A voice assistant app for elderly tech coaching.
           </p>
         </a>
 
         <a
           href=""
-          className="group rounded-lg border border-transparent mx-4 my-4 px-5 py-4 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent max-w-[268px] mx-4 my-4 px-5 py-4 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -91,20 +90,20 @@ export default function Home() {
             priority
           />
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
+            A software-in-the-loop simulation for autonomous drone navigation.
           </p>
         </a>
 
         <a
           href=""
-          className="group rounded-lg border border-transparent mx-4 my-4 px-5 py-4 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent max-w-[268px] mx-4 my-4 px-5 py-4 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2
             className={`mb-3 text-2xl font-semibold group-hover:text-blue-500 group-hover:dark:text-blue-300`}
           >
-            NTK for PINNs{" "}
+            NTsolver{" "}
           </h2>
           <Image
             className="mb-2 rounded transition-transform group-hover:translate-x-1 motion-reduce:transform-none"
@@ -115,7 +114,8 @@ export default function Home() {
             priority
           />
           <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            A learning-based differential equation solver with enhanced
+            accuracy.
           </p>
         </a>
       </div>
