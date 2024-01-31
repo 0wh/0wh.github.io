@@ -8,7 +8,7 @@ export default function Home() {
       <div className="mb-4 max-w-[600px] lg:max-w-[900px] xl:max-w-[1200px] w-full">
         <p className="mx-4 text-start font-semibold font-sans">
           Hey, I'm <span className="font-serif text-2xl">Mike Hyatt</span>.
-          Please chat with my assistant.
+          Please chat with my AI assistant.
         </p>
         <div className="sm:mx-4 sm:rounded-lg border border-transparent my-4 px-5 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30">
           <Panel />
@@ -19,7 +19,7 @@ export default function Home() {
           Projects
         </p>
       </div>
-      <div className="grid text-left grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid text-left sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <a
           href=""
           className="group rounded-lg border border-transparent max-w-[268px] mx-4 my-4 px-5 py-4 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30"

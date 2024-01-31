@@ -81,13 +81,9 @@ const Panel = () => {
   };
   const filteredMessages = messages.filter((item) => item.content !== null);
   const [finishedTyping, setFinishedTyping] = useState(true);
-  const endOfContentRef = useRef();
-  useEffect(() => {
-    endOfContentRef.current?.scrollIntoView();
-  }, [messages]);
   return (
     <div className="p-3 justify-between">
-      <FullView messages={filteredMessages} endOfContentRef={endOfContentRef} />
+      <FullView messages={filteredMessages} />
       <div className={`flex w-full`}>
         {!inputText && (
           <div className="flex flex-col justify-center opacity-40">
@@ -154,9 +150,16 @@ const MsgBox = ({ message }) => {
   );
 };
 
-const FullView = ({ messages, endOfContentRef }) => {
+const FullView = ({ messages }) => {
+  useEffect(() => {
+    const chatBox = document.getElementById("chatBox");
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }, [messages]);
   return (
-    <div className="flex flex-col w-full items-center h-[440px] overflow-auto rounded-md">
+    <div
+      id="chatBox"
+      className="flex flex-col w-full items-center h-[440px] overflow-auto rounded-md"
+    >
       {messages.map((message, index) => (
         <div
           key={index}
@@ -169,7 +172,6 @@ const FullView = ({ messages, endOfContentRef }) => {
           {message.content}
         </div>
       ))}
-      <div ref={endOfContentRef} />
     </div>
   );
 };
