@@ -4,11 +4,14 @@ import Panel from "./Panel";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center pt-5 sm:p-5 sm:pt-16 lg:p-32">
+    <main className="flex min-h-screen flex-col items-center pt-5 sm:p-5 sm:pt-16 lg:p-32 lg:pt-16">
       <div className="mb-4 max-w-[600px] lg:max-w-[900px] xl:max-w-[1200px] w-full">
-        <p className="mx-4 text-start font-semibold font-sans">
-          Hey, I'm <span className="font-serif text-2xl">Mike Hyatt</span>.
-          Please chat with my AI assistant.
+        <p className="mx-4 font-semibold text-start font-sans">
+          Hello! I'm <span className="font-serif text-2xl">Mike Hyatt</span>.
+        </p>
+        <p className="mx-4 mt-3.5 text-start font-sans">
+          For detailed insights about my work and skills, feel free to converse
+          with my AI assistant. They're here to help!
         </p>
         <div className="sm:mx-4 sm:rounded-lg border border-transparent my-4 px-5 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30">
           <Panel />
