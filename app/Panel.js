@@ -158,7 +158,7 @@ const FullView = ({ messages }) => {
   return (
     <div
       id="chatBox"
-      className="flex flex-col w-full items-center h-[440px] overflow-auto rounded-md"
+      className="flex flex-col w-full items-center justify-end sm:justify-start h-[440px] overflow-auto rounded-md"
     >
       {messages.map((message, index) => (
         <div
