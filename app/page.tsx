@@ -4,14 +4,26 @@ import Panel from "./Panel";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center pt-5 sm:p-5 sm:pt-16 lg:p-32 lg:pt-16">
+    <main className="flex min-h-screen flex-col items-center py-5 sm:p-5 sm:pt-16 lg:p-32 lg:pt-16">
       <div className="mb-4 max-w-[600px] lg:max-w-[900px] xl:max-w-[1200px] w-full">
-        <p className="mx-4 text-start font-sans">
-          Hello! I'm{" "}
-          <span className="font-semibold font-serif text-2xl">Mike Hyatt</span>.
-          Please feel free to converse with my AI assistant. They're here to
-          help!
-        </p>
+        <div className="flex items-center">
+          <Image
+            className="absolute translate-y-14 sm:static sm:translate-y-0 mb-2 ml-6 sm:ml-10 mr-4 rounded-[40px] border-2 border-white/30 dark:border-white/60 p-0.5"
+            src="/photo.png"
+            alt="NextGPT.live"
+            width={80}
+            height={80}
+            priority
+          />
+          <p className="mx-4 text-center sm:text-start font-sans">
+            Hello! I'm{" "}
+            <span className="font-semibold font-serif text-2xl">
+              Mike Hyatt
+            </span>
+            . Please feel free to converse with my AI assistant. They're here to
+            help!
+          </p>
+        </div>
         <div className="sm:mx-4 sm:rounded-lg border border-transparent my-4 px-5 transition-colors border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30">
           <Panel />
         </div>
