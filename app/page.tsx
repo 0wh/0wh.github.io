@@ -15,8 +15,8 @@ export default function Home() {
             height={80}
             priority
           />
-          <p className="mr-4 ml-[128px] sm:ml-4 sm:text-start font-sans">
-            <span className="-ml-[100px] sm:ml-0">Hello! I'm </span>
+          <p className="mx-11 sm:mx-4 text-end sm:text-start font-sans max-w-[500px] sm:max-w-none">
+            Hello! I'm{" "}
             <span className="font-semibold font-serif text-2xl">
               Mike Hyatt
             </span>
