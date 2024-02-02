@@ -7,17 +7,16 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center py-5 sm:p-5 sm:pt-16 lg:p-32 lg:pt-16">
       <div className="mb-4 max-w-[600px] lg:max-w-[900px] xl:max-w-[1200px] w-full">
         <div className="flex items-center">
-          <div className="sm:hidden z-20 absolute translate-y-14 mb-2 ml-6 w-20 h-20 rounded-[40px] bg-gray-100 dark:bg-black" />
           <Image
-            className="z-20 absolute translate-y-14 sm:static sm:translate-y-0 mb-2 ml-6 sm:ml-10 mr-4 rounded-[40px] border-2 border-black/10 dark:border-white/60 p-0.5"
+            className="z-20 absolute translate-y-14 sm:static sm:translate-y-0 mb-2 ml-6 sm:ml-10 mr-4 rounded-[40px] border-2 border-black/10 dark:border-white/60 p-0.5 bg-gray-100 dark:bg-black sm:bg-transparent sm:dark:bg-transparent"
             src="/photo.png"
             alt="NextGPT.live"
             width={80}
             height={80}
             priority
           />
-          <p className="mx-4 text-center sm:text-start font-sans max-w-[500px] sm:max-w-none">
-            Hello! I'm{" "}
+          <p className="mr-4 ml-[128px] sm:ml-4 sm:text-start font-sans">
+            <span className="-ml-[100px] sm:ml-0">Hello! I'm </span>
             <span className="font-semibold font-serif text-2xl">
               Mike Hyatt
             </span>
