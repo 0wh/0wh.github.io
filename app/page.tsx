@@ -8,7 +8,7 @@ export default function Home() {
       <div className="mb-4 max-w-[600px] lg:max-w-[900px] xl:max-w-[1200px] w-full">
         <div className="flex items-center">
           <Image
-            className="z-20 absolute translate-y-14 sm:static sm:translate-y-0 mb-2 ml-6 sm:ml-10 mr-4 rounded-[40px] border-2 border-black/10 dark:border-white/60 p-0.5 bg-gray-100 dark:bg-black sm:bg-transparent sm:dark:bg-transparent"
+            className="z-20 absolute translate-y-[5.5ch] sm:static sm:translate-y-0 mb-2 ml-6 sm:ml-10 mr-4 rounded-[40px] border-2 border-black/10 dark:border-white/60 p-0.5 bg-gray-100 dark:bg-black sm:bg-transparent sm:dark:bg-transparent"
             src="/photo.png"
             alt="NextGPT.live"
             width={80}
