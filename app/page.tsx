@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center py-5 sm:p-5 sm:pt-16 lg:p-32 lg:pt-16">
       <div className="mb-4 max-w-[600px] lg:max-w-[900px] xl:max-w-[1200px] w-full">
-        <div className="flex items-center">
+        <div className="flex items-center overflow-hidden">
           <Image
             className="z-20 absolute translate-y-[5.5ch] sm:static sm:translate-y-0 mb-2 ml-5 sm:ml-10 mr-4 rounded-[36px] border-2 border-black/10 dark:border-white/60 p-0.5 bg-gray-100 dark:bg-black sm:bg-transparent sm:dark:bg-transparent"
             src="/photo.png"
@@ -15,7 +15,7 @@ export default function Home() {
             height={72}
             priority
           />
-          <p className="mx-4 min-w-[396px] text-center sm:text-start font-sans max-w-[56ch] sm:max-w-none">
+          <p className="mx-4 min-w-[388px] text-center sm:text-start font-sans max-w-[56ch] sm:max-w-none">
             Hello! I'm{" "}
             <span className="font-semibold font-serif text-2xl">
               Mike Hyatt
